@@ -6,12 +6,12 @@ to get started!
 ## Install
 
 To start using WebTorrent, simply include the
-[`webtorrent`](https://esm.sh/webtorrent)
+[`webtorrent`](https://esm.sh/gh/RockinChaos/webtorrent)
 script on your page.
 
 ```html
 <script type='module'>
-  import WebTorrent from 'https://esm.sh/webtorrent/dist/webtorrent.min.js'
+  import WebTorrent from 'https://esm.sh/gh/RockinChaos/webtorrent/dist/webtorrent.min.js'
 </script>
 ```
 
@@ -24,7 +24,7 @@ code, and load packages installed by [npm](https://npmjs.org/).
 For an example webpack config see [the webpack bundle config used by webtorrent](/scripts/browser.webpack.js).
 
 ```
-npm install webtorrent
+npm install github:RockinChaos/webtorrent
 ```
 
 Then use `WebTorrent` like this:
@@ -150,7 +150,7 @@ downloaded.
 
     <script type='module'>
       // Include the latest version of WebTorrent
-      import WebTorrent from 'https://esm.sh/webtorrent/dist/webtorrent.min.js'
+      import WebTorrent from 'https://esm.sh/gh/RockinChaos/webtorrent/dist/webtorrent.min.js'
       
       const client = new WebTorrent()
 

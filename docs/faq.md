@@ -254,7 +254,7 @@ clients like Transmission, and uTorrent to add support for WebTorrent. **Vuze**
 To start using WebTorrent, simply include the
 [`webtorrent.min.js`](https://cdn.jsdelivr.net/npm/webtorrent@latest/webtorrent.min.js)
 script on your page. If you use [browserify](http://browserify.org/) or [webpack](https://webpack.js.org/), you can
-`npm install webtorrent` and `import WebTorrent from 'webtorrent'`.
+`npm install github:RockinChaos/webtorrent` and `import WebTorrent from 'webtorrent'`.
 
 It's easy to download a torrent and add it to the page.
 
@@ -427,7 +427,7 @@ If you're looking for help getting started, come join us in [Gitter][gitter] or 
 IRC at `#webtorrent` (freenode) and how you can get started.
 
 
-[open-issues]: https://github.com/webtorrent/webtorrent/issues?state=open
+[open-issues]: https://github.com/RockinChaos/webtorrent/issues?state=open
 [contributing]: https://github.com/webtorrent/.github/blob/master/CONTRIBUTING.md
 
 ## Where can I learn more?
@@ -581,10 +581,10 @@ Open an issue on the WebTorrent [issue tracker][issues], or join us in
 [render-media]: https://github.com/feross/render-media/blob/master/index.js
 [gitter]: https://gitter.im/webtorrent/webtorrent
 [instant.io]: https://instant.io
-[issues]: https://github.com/webtorrent/webtorrent/issues
-[license]: https://github.com/webtorrent/webtorrent/blob/master/LICENSE
+[issues]: https://github.com/RockinChaos/webtorrent/issues
+[license]: https://github.com/RockinChaos/webtorrent/blob/master/LICENSE
 [peercdn]: http://www.peercdn.com/
 [playback]: https://mafintosh.github.io/playback/
-[pr]: https://github.com/webtorrent/webtorrent
+[pr]: https://github.com/RockinChaos/webtorrent
 [webtorrent-hybrid]: https://npmjs.com/package/webtorrent-hybrid
 [webtorrent]: https://npmjs.com/package/webtorrent

@@ -10,10 +10,9 @@
 <h4 align="center">The streaming torrent client. For node.js and the web.</h4>
 
 <p align="center">
-  <a href="https://discord.gg/cnXkm4Z"><img src="https://img.shields.io/discord/612575111718895616" alt="discord"></a>
-  <a href="https://github.com/webtorrent/webtorrent/actions"><img src="https://img.shields.io/github/actions/workflow/status/webtorrent/webtorrent/ci.yml?branch=master" alt="ci"></a>
-  <a href="https://www.npmjs.com/package/webtorrent"><img src="https://img.shields.io/npm/v/webtorrent.svg" alt="npm version"></a>
-  <a href="https://www.npmjs.com/package/webtorrent"><img src="https://img.shields.io/npm/dm/webtorrent.svg" alt="npm downloads"></a>
+  <a href="https://github.com/RockinChaos/webtorrent/actions"><img src="https://img.shields.io/github/actions/workflow/status/RockinChaos/webtorrent/ci.yml?branch=master" alt="ci"></a>
+  <a href="https://github.com/RockinChaos/webtorrent/releases"><img src="https://img.shields.io/github/v/release/RockinChaos/webtorrent" alt="github release"></a>
+  <a href="https://github.com/RockinChaos/webtorrent/releases"><img src="https://img.shields.io/github/downloads/RockinChaos/webtorrent/total" alt="github downloads"></a>
   <a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="Standard - JavaScript Style Guide"></a>
 </p>
 
@@ -94,7 +93,7 @@ they can connect to both normal *and* web peers. We hope other clients will foll
 To install WebTorrent for use in node or the browser with `import WebTorrent from 'webtorrent'`, run:
 
 ```bash
-npm install webtorrent
+npm install github:RockinChaos/webtorrent
 ```
 
 To install a `webtorrent`
@@ -111,8 +110,8 @@ To install a WebTorrent desktop application for Mac, Windows, or Linux, see
 
 - **Join us in [Gitter][webtorrent-gitter-url]** or on freenode at `#webtorrent` to help
   with development or to hang out with some mad science hackers :)
-- **[Create a new issue](https://github.com/webtorrent/webtorrent/issues/new)** to report bugs
-- **[Fix an issue](https://github.com/webtorrent/webtorrent/issues?state=open)**. WebTorrent
+- **[Create a new issue](https://github.com/RockinChaos/webtorrent/issues/new)** to report bugs
+- **[Fix an issue](https://github.com/RockinChaos/webtorrent/issues?state=open)**. WebTorrent
   is an [OPEN Open Source Project](https://github.com/webtorrent/.github/blob/master/CONTRIBUTING.md)!
 
 ### Who is using WebTorrent today?
@@ -196,7 +195,7 @@ The WebTorrent script is also hosted on fast, reliable CDN infrastructure for ea
 
 ```html
 <script type='module'>
-  import WebTorrent from 'https://esm.sh/webtorrent/dist/webtorrent.min.js'
+  import WebTorrent from 'https://esm.sh/gh/RockinChaos/webtorrent/dist/webtorrent.min.js'
 </script>
 ```
 
@@ -302,13 +301,13 @@ These are the main modules that make up WebTorrent:
 | [ut_metadata][ut_metadata] | [![][ut_metadata-ti]][ut_metadata-tu] | [![][ut_metadata-ni]][ut_metadata-nu] | metadata for magnet uris (protocol extension)
 | [ut_pex][ut_pex] | [![][ut_pex-ti]][ut_pex-tu] | [![][ut_pex-ni]][ut_pex-nu] | peer discovery (protocol extension)
 
-[webtorrent]: https://github.com/webtorrent/webtorrent
+[webtorrent]: https://github.com/RockinChaos/webtorrent
 [webtorrent-gitter-url]: https://gitter.im/webtorrent/webtorrent
 
-[webtorrent-ti]: https://img.shields.io/github/actions/workflow/status/webtorrent/webtorrent/ci.yml
-[webtorrent-tu]: https://github.com/webtorrent/webtorrent/actions
-[webtorrent-ni]: https://img.shields.io/npm/v/webtorrent.svg
-[webtorrent-nu]: https://www.npmjs.com/package/webtorrent
+[webtorrent-ti]: https://img.shields.io/github/actions/workflow/status/RockinChaos/webtorrent/ci.yml
+[webtorrent-tu]: https://github.com/RockinChaos/webtorrent/actions
+[webtorrent-ni]: https://img.shields.io/github/v/release/RockinChaos/webtorrent
+[webtorrent-nu]: https://github.com/RockinChaos/webtorrent/releases
 [webtorrent-desktop]: https://webtorrent.io/desktop
 
 [bittorrent-dht]: https://github.com/webtorrent/bittorrent-dht

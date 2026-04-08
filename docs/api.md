@@ -10,7 +10,7 @@ To use WebTorrent in the browser, [WebRTC] support is required (Chrome, Firefox,
 ## Install
 
 ```bash
-npm install webtorrent
+npm install github:RockinChaos/webtorrent
 ```
 
 ## Quick Example
@@ -320,7 +320,7 @@ instance.close()
 client.destroy()
 ```
 
-In browser needs either [this worker](https://github.com/webtorrent/webtorrent/blob/master/sw.min.js) to be used, or have [this functionality](https://github.com/webtorrent/webtorrent/blob/master/lib/worker.js) implemented.
+In browser needs either [this worker](https://github.com/webtorrent/RockinChaos/webtorrent/blob/master/sw.min.js) to be used, or have [this functionality](https://github.com/RockinChaos/webtorrent/blob/master/lib/worker.js) implemented.
 
 Here is a user example for browser:
 
@@ -344,7 +344,7 @@ client.add(magnetURI, torrent => {
 client._server.close()
 client.destroy()
 ```
-Needs either [this worker](https://github.com/webtorrent/webtorrent/blob/master/sw.min.js) to be used, or have [this functionality](https://github.com/webtorrent/webtorrent/blob/master/lib/worker.js) implemented.
+Needs either [this worker](https://github.com/webtorrent/RockinChaos/webtorrent/blob/master/sw.min.js) to be used, or have [this functionality](https://github.com/RockinChaos/webtorrent/blob/master/lib/worker.js) implemented.
 
 # Torrent API
 
