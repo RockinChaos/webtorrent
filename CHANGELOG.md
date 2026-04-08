@@ -1,3 +1,17 @@
+## [2.8.6](https://github.com/RockinChaos/webtorrent/compare/v2.8.5...v2.8.6) (2026-04-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency debug to ^4.4.3 ([#2993](https://github.com/RockinChaos/webtorrent/issues/2993)) ([7909a3e](https://github.com/RockinChaos/webtorrent/commit/7909a3ecb9d02af447c1e3a580012e300374218c))
+* setting throttleDownload as a float causes error ([#2994](https://github.com/RockinChaos/webtorrent/issues/2994)) ([52ef175](https://github.com/RockinChaos/webtorrent/commit/52ef1754245b5699d7d71ff5de27cc3f42e96de2))
+* simplify service worker documentation ([#2996](https://github.com/RockinChaos/webtorrent/issues/2996)) ([40c1381](https://github.com/RockinChaos/webtorrent/commit/40c13811e30202091779f80e5b9e92b8497d2bee))
+
+
+### Performance Improvements
+
+* dont spam downloadSpeed, calculate requests correctly for webseeds ([#3001](https://github.com/RockinChaos/webtorrent/issues/3001)) ([fd8f39e](https://github.com/RockinChaos/webtorrent/commit/fd8f39e1560c5ae5db6b12153077877f0f33b076))
+
 ## [2.8.5](https://github.com/webtorrent/webtorrent/compare/v2.8.4...v2.8.5) (2025-11-30)
 
 
