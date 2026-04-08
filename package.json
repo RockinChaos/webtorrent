@@ -23,7 +23,7 @@
     "ut_pex": false
   },
   "bugs": {
-    "url": "https://github.com/webtorrent/webtorrent/issues"
+    "url": "https://github.com/RockinChaos/webtorrent/issues"
   },
   "chromeapp": {
     "./lib/utp.cjs": false,
@@ -82,7 +82,6 @@
     "@babel/eslint-parser": "^7.28.5",
     "@babel/plugin-syntax-import-assertions": "7.27.1",
     "@babel/preset-env": "7.28.5",
-    "@webtorrent/semantic-release-config": "1.0.10",
     "airtap": "4.0.4",
     "airtap-manual": "1.0.0",
     "airtap-sauce": "1.1.2",
@@ -105,6 +104,11 @@
     "querystring": "^0.2.1",
     "run-series": "1.1.9",
     "semantic-release": "22.0.12",
+    "@semantic-release/changelog": "^6.0.0",
+    "@semantic-release/commit-analyzer": "^10.0.0",
+    "@semantic-release/git": "^10.0.0",
+    "@semantic-release/github": "^9.0.0",
+    "@semantic-release/release-notes-generator": "^11.0.0",
     "serve-static": "2.2.0",
     "stream-browserify": "^3.0.0",
     "tap-parser": "^16.0.1",
@@ -136,7 +140,7 @@
       "url": "https://feross.org/support"
     }
   ],
-  "homepage": "https://webtorrent.io",
+  "homepage": "https://github.com/RockinChaos/webtorrent",
   "keywords": [
     "bittorrent",
     "bittorrent client",
@@ -157,7 +161,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/webtorrent/webtorrent.git"
+    "url": "git://github.com/RockinChaos/webtorrent.git"
   },
   "scripts": {
     "build": "npm run build-js && npm run build-js-worker && npm run build-chromeapp",
@@ -183,6 +187,48 @@
     "rangeStrategy": "bump"
   },
   "release": {
-    "extends": "@webtorrent/semantic-release-config"
+    "branches": ["master", "main"],
+    "plugins": [
+      [
+        "@semantic-release/commit-analyzer",
+        {
+          "releaseRules": [
+            { "type": "docs", "release": "patch" },
+            { "type": "refactor", "release": "patch" },
+            { "type": "perf", "release": "patch" }
+          ],
+          "parserOpts": {
+            "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES", "BREAKING"]
+          }
+        }
+      ],
+      [
+        "@semantic-release/release-notes-generator",
+        {
+          "parserOpts": {
+            "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES", "BREAKING"]
+          }
+        }
+      ],
+      "@semantic-release/changelog",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "AUTHORS.md",
+            "CHANGELOG.md",
+            "package.json",
+            "dist/webtorrent.min.js",
+            "dist/webtorrent.min.js.map",
+            "dist/webtorrent.chromeapp.js",
+            "dist/webtorrent.chromeapp.js.map",
+            "dist/sw.min.js",
+            "dist/sw.min.js.map"
+          ],
+          "message": "chore(release): ${nextRelease.version} \n\n${nextRelease.notes}"
+        }
+      ],
+      "@semantic-release/github"
+    ]
   }
 }
