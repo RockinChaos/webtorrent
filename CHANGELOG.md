@@ -1,3 +1,10 @@
+## [2.8.7](https://github.com/RockinChaos/webtorrent/compare/v2.8.6...v2.8.7) (2026-04-09)
+
+
+### Bug Fixes
+
+* **deps:** update webtorrent ([#16](https://github.com/RockinChaos/webtorrent/issues/16)) ([e402d3a](https://github.com/RockinChaos/webtorrent/commit/e402d3a7d692a355dff46f5205179c3f8814f614))
+
 ## [2.8.6](https://github.com/RockinChaos/webtorrent/compare/v2.8.5...v2.8.6) (2026-04-08)
 
 
