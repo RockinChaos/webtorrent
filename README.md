@@ -10,7 +10,7 @@
 <h4 align="center">The streaming torrent client. For node.js and the web.</h4>
 
 <p align="center">
-  <a href="https://github.com/RockinChaos/webtorrent/actions"><img src="https://img.shields.io/github/actions/workflow/status/RockinChaos/webtorrent/ci.yml?branch=master" alt="ci"></a>
+  <a href="https://github.com/RockinChaos/webtorrent/actions"><img src="https://img.shields.io/github/actions/workflow/status/RockinChaos/webtorrent/release.yml?branch=master" alt="ci"></a>
   <a href="https://github.com/RockinChaos/webtorrent/releases"><img src="https://img.shields.io/github/v/release/RockinChaos/webtorrent" alt="github release"></a>
   <a href="https://github.com/RockinChaos/webtorrent/releases"><img src="https://img.shields.io/github/downloads/RockinChaos/webtorrent/total" alt="github downloads"></a>
   <a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="Standard - JavaScript Style Guide"></a>
@@ -33,12 +33,12 @@ It can be used **without** browser plugins, extensions, or installations. It's J
 JavaScript™. Note: WebTorrent does **not** support UDP/TCP peers in browser.
 
 Simply include the
-[`webtorrent.min.js`](https://cdn.jsdelivr.net/npm/webtorrent@latest/webtorrent.min.js) script
+[`webtorrent.min.js`](https://cdn.jsdelivr.net/gh/RockinChaos/webtorrent@latest/dist/webtorrent.min.js) script
 on your page to start fetching files over WebRTC using the BitTorrent protocol, or
 `import WebTorrent from 'webtorrent'` with [browserify](http://browserify.org/) or [webpack](https://webpack.js.org/). See [demo apps
 ](#who-is-using-webtorrent-today) and [code examples](#usage) below.
 
-[![jsdelivr download count](https://data.jsdelivr.com/v1/package/npm/webtorrent/badge)](https://cdn.jsdelivr.net/npm/webtorrent@latest/webtorrent.min.js)
+[![jsdelivr download count](https://data.jsdelivr.com/v1/package/gh/RockinChaos/webtorrent/badge)](https://cdn.jsdelivr.net/gh/RockinChaos/webtorrent@latest/dist/webtorrent.min.js)
 
 To make BitTorrent work over WebRTC (which is the only P2P transport that works on the
 web) we made some protocol changes. Therefore, a browser-based WebTorrent client or **"web
@@ -304,7 +304,7 @@ These are the main modules that make up WebTorrent:
 [webtorrent]: https://github.com/RockinChaos/webtorrent
 [webtorrent-gitter-url]: https://gitter.im/webtorrent/webtorrent
 
-[webtorrent-ti]: https://img.shields.io/github/actions/workflow/status/RockinChaos/webtorrent/ci.yml
+[webtorrent-ti]: https://img.shields.io/github/actions/workflow/status/RockinChaos/webtorrent/release.yml
 [webtorrent-tu]: https://github.com/RockinChaos/webtorrent/actions
 [webtorrent-ni]: https://img.shields.io/github/v/release/RockinChaos/webtorrent
 [webtorrent-nu]: https://github.com/RockinChaos/webtorrent/releases
