@@ -5,16 +5,13 @@ on:
       - master
     tags-ignore:
       - '*'
-  pull_request:
-    branches:
-      - master
-concurrency: 
+concurrency:
   group: ${{ github.ref }}
   cancel-in-progress: true
 jobs:
-  test:
+  test-node:
     name: Node ${{ matrix.node }} / ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
+    runs-on: anchor-3
     strategy:
       fail-fast: false
       matrix:
@@ -30,8 +27,24 @@ jobs:
           node-version: ${{ matrix.node }}
       - run: npm install
       - run: npm run build --if-present
-      - run: echo "127.0.0.1 airtap.local" | sudo tee -a /etc/hosts
-      - run: npm test
+      - run: npx eslint .
+      - run: npm run test-node
+  test-browser:
+    name: Browser / ${{ matrix.browser }}
+    runs-on: anchor-3
+    strategy:
+      fail-fast: false
+      matrix:
+        browser:
+          - chromium
+          - firefox
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '18'
+      - run: npm install
+      - run: npm run build --if-present
+      - run: npm run test-browser-local
         env:
-          SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}
-          SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_ACCESS_KEY }}
+          BROWSER: ${{ matrix.browser }}
